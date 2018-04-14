@@ -24,5 +24,6 @@ class PersonController {
 	Page<Person> list( Pageable pageable){
 		Page<Person> persons = personService.listAllByPage(pageable)
 		persons
+        //http://localhost:8040/persons?page=0&size=3&sort=name,desc&sort=id,asc
 	} 
 }
